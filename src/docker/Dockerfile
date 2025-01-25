@@ -7,11 +7,11 @@
 # Version 0.1
 #---------------------------------------------------------------
 # Base Version
-FROM arafkarsh/java:17-alpine
+FROM arafkarsh/java:17-alpaquita
 
 LABEL author="Araf Karsh Hamid <araf.karsh@gmail.com>"
 
-RUN mkdir /Softwares/service
+RUN mkdir -p /Softwares/service
 
 ARG SPRINGBOOT_JAR=mock-payment-spring-boot.jar
 
