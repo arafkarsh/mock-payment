@@ -83,22 +83,19 @@ public class ServiceHelp {
 
 		// Environment Variables
 		for(String key: sysProps.keySet()) {
-			log.info("|System Property Key   = "+key+" | Value = "+sysProps.get(key));
-			// System.out.println(LocalDateTime.now()+"|System Property List  = "+key);
+			log.debug("|System Property Key   = "+key+" | Value = "+sysProps.get(key));
 		}
 
 		// Property Map (Application.Properties)
 		HashMap<String, String> map = serviceConfig.getAppPropertyMap();
 		for(String k : map.keySet()) {
-			log.info("|Service Property Key  = "+k+" | Value = "+map.get(k));
-			// System.out.println(LocalDateTime.now()+"|Service Property Map  = "+k+" | Value = "+map.get(k));
+			log.debug("|Service Property Key  = "+k+" | Value = "+map.get(k));
 		}
 
 		// Property List (Application.properties)
 		ArrayList<String> properties = serviceConfig.getAppPropertyList();
 		for(String p: properties) {
-			log.info("|Service Property List = "+p);
-			// System.out.println(LocalDateTime.now()+"|Service Property List = "+p);
+			log.debug("|Service Property List = "+p);
 		}
  	}
 }

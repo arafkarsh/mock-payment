@@ -74,7 +74,7 @@ Setup the Docker Hub or any other Container Registry
 
 ### Other Commands
 
-1. stop (Stop the Container)_
+1. stop (Stop the Container)
 2. stats (show container stats)
 
 

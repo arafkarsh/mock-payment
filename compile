@@ -36,7 +36,7 @@ then
 	echo "---------------------------------------------------------------------------------------"
 	echo "Compiling Service > $SERVICE :: SUCCESS"
 	echo "---------------------------------------------------------------------------------------"
-	echo "Copy the jar files and the libs to the Docker Directory (src/docker)"
+	echo "Copy the jar files to the Docker Directory (src/docker)"
 	cp target/*service*-spring-boot.jar src/docker/$CONTAINER-spring-boot.jar
 	echo "Copy the application.properties File to the Docker Directory (src/docker)"
 	cp src/main/resources/application.properties src/docker/

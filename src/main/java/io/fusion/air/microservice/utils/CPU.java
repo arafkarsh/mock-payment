@@ -59,7 +59,7 @@ public class CPU {
 					methodsMap.put(method.getName(), method);
 				}
 			} catch (Exception ex) {
-				log.info("Error in CPU.loadMethods() : {} ", ex.getMessage());
+				log.debug("Error in CPU.loadMethods() : {} ", ex.getMessage());
 			}
 		} // Loop
 	}

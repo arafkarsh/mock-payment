@@ -10,7 +10,7 @@ PROPS_TMPL=app.props.tmpl
 PROPS_BACK=$PROPS_PATH/backup
 PROPS_FILE=application.properties
 
-CURR_BN=`git rev-list HEAD --count`
+CURR_BN=$(git rev-list HEAD --count 2>/dev/null || echo 1)
 PREV_BN=`expr $CURR_BN - 1`
 
 echo "======================================================================="

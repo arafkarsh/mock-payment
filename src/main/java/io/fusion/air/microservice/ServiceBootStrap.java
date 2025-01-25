@@ -54,8 +54,6 @@ import java.util.Arrays;
 import static java.lang.invoke.MethodHandles.lookup;
 import static org.slf4j.LoggerFactory.getLogger;
 
-import static io.fusion.air.microservice.server.config.ServiceHelp.VERSION;;
-
 /**
  * Micro Service - Spring Boot Application
  * API URL : http://localhost:9090/api/v1/service/swagger-ui.html
@@ -180,7 +178,7 @@ public class ServiceBootStrap {
 		};
 	}
 
-
+	/**
 	@Bean
 	public GroupedOpenApi paymentApi() {
 		return GroupedOpenApi.builder()
@@ -188,7 +186,7 @@ public class ServiceBootStrap {
 				.pathsToMatch(serviceConfig.getServiceApiPath()+"/**")
 				.build();
 	}
-
+	*/
 
 	/**
 	 * Open API v3 Docs - All

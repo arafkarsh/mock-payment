@@ -108,8 +108,8 @@ public class ServiceConfiguration implements Serializable {
 	@Value("${springdoc.swagger-ui.path}")
 	private String apiDocPath;
 
-	@Value("${build.number:13}")
-	private int buildNumber;
+	@Value("${build.number:0}")
+	private int buildNumber = 0;
 	
 	@Value("${build.date}")
 	private String buildDate;
